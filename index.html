@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expo Campus Smanli</title>
+<meta name="description" content="Expo Campus Smanli (ECS) adalah event tahunan alumni SMAN 5 Cilegon untuk membantu siswa Smanli menemukan arah menuju kampus dan karier impian.">
+<link rel="icon" href="assets/images/logo/logo-ecs.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/event-promo.css">
+<link rel="stylesheet" href="css/sponsor.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/footer.css">
+
+<!-- Dimuat lebih awal di <head> supaya siap sebelum gambar mulai dimuat -->
+<script src="js/img-fallback.js"></script>
+</head>
+<body>
+
+<!-- =============================== NAVBAR =============================== -->
+<header class="navbar navbar--on-dark">
+  <div class="container">
+    <a href="index.html#home" class="navbar__brand">
+      <img src="assets/images/logo/logo-ecs.png" alt="Logo ECS">
+      <span>Expo Campus Smanli</span>
+    </a>
+
+    <nav class="navbar__links" aria-label="Navigasi utama">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#join">Join Us</a>
+      <a href="index.html#sponsor">Sponsor</a>
+      <a href="event.html">Event</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <a href="index.html#join" class="btn btn-primary btn-sm navbar__cta">Gabung ECS'27</a>
+
+    <button class="navbar__toggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="navbar__mobile" aria-label="Navigasi mobile">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#join">Join Us</a>
+    <a href="index.html#sponsor">Sponsor</a>
+    <a href="event.html">Event</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#join" class="btn btn-navy">Gabung ECS'27</a>
+  </nav>
+</header>
+
+<!-- =============================== HERO SLIDER ===============================
+     Tambah foto: duplikasi blok .hero__slide, ganti src & data-label.
+     Slide pertama wajib punya class "is-active". Ukuran foto disarankan 1920x1080.
+====================================================================== -->
+<section class="hero" id="home">
+  <div class="hero__slides">
+    <div class="hero__slide is-active">
+      <div class="photo-frame" data-label="assets/images/hero/hero-1.jpg — 1920×1080">
+        <img src="assets/images/hero/ecs26.jpg" alt="Dokumentasi ECS 1" onerror="ecsImgFallback(this)">
+      </div>
+    </div>
+    <div class="hero__slide">
+      <div class="photo-frame" data-label="assets/images/hero/hero-2.jpg — 1920×1080">
+        <img src="assets/images/hero/fotoecs2.jpeg" alt="Dokumentasi ECS 2" onerror="ecsImgFallback(this)">
+      </div>
+    </div>
+    <div class="hero__slide">
+      <div class="photo-frame" data-label="assets/images/hero/hero-3.jpg — 1920×1080">
+        <img src="assets/images/hero/ecs6.jpg" alt="Dokumentasi ECS 3" onerror="ecsImgFallback(this)">
+      </div>
+    </div>
+    <div class="hero__slide">
+      <div class="photo-frame" data-label="assets/images/hero/hero-4.jpg — 1920×1080">
+        <img src="assets/images/hero/ecs5.jpg" alt="Dokumentasi ECS 4" onerror="ecsImgFallback(this)">
+      </div>
+    </div>
+    <div class="hero__slide">
+      <div class="photo-frame" data-label="assets/images/hero/hero-2.jpg — 1920×1080">
+        <img src="assets/images/hero/ecs3.jpg" alt="Dokumentasi ECS 2" onerror="ecsImgFallback(this)">
+      </div>
+    </div>
+    <div class="hero__slide">
+      <div class="photo-frame" data-label="assets/images/hero/hero-2.jpg — 1920×1080">
+        <img src="assets/images/hero/ecs2.jpg" alt="Dokumentasi ECS 2" onerror="ecsImgFallback(this)">
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__content container">
+    <span class="hero__eyebrow">Expo Campus Smanli · ECS'27</span>
+    <h1>Satu Langkah Lebih Dekat Menuju <em>Kampus &amp; Karier</em> Impianmu</h1>
+    <p class="hero__desc">Event tahunan dari alumni SMAN 5 Cilegon untuk siswa Smanli yang ingin melanjutkan ke PTN, PTS, atau dunia kerja - lewat cerita, informasi, dan pengalaman langsung dari para alumni.</p>
+    <div class="hero__actions">
+      <a href="index.html#join" class="btn btn-primary">Gabung ECS'27</a>
+      <a href="event.html" class="btn btn-outline">Lihat Rangkaian Event</a>
+    </div>
+  </div>
+
+  <span class="hero__scroll">Scroll</span>
+
+  <div class="hero__controls">
+    <div class="hero__arrows">
+      <button class="hero__arrow" data-hero-prev aria-label="Foto sebelumnya">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="hero__arrow" data-hero-next aria-label="Foto berikutnya">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+    <div class="hero__dots"></div>
+  </div>
+</section>
+
+<!-- =============================== ABOUT =============================== -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="about__grid">
+
+      <div class="about__media reveal">
+        <div class="about__frame">
+          <div class="photo-frame" data-label="assets/images/about/about-1.jpg — rasio 4:5">
+            <img src="assets/images/about/aboutecs.png" alt="Kegiatan Expo Campus Smanli" onerror="ecsImgFallback(this)">
+          </div>
+        </div>
+        <div class="about__badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+          <span>
+            <strong>Sejak 2023</strong>
+            <span>Konsisten hadir tiap tahun</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="about__body reveal">
+        <span class="eyebrow">Tentang Kami</span>
+        <h2>Expo Campus Smanli (ECS)</h2>
+        <p>Expo Campus Smanli (ECS) adalah event tahunan yang diselenggarakan oleh alumni Smanli (SMAN 5 Cilegon) dengan tujuan memberi informasi kepada siswa yang ingin melanjutkan ke perguruan tinggi negeri maupun swasta, atau bahkan langsung terjun ke dunia kerja.</p>
+        <p>Lewat ECS, para alumni berbagi wawasan, informasi jalur masuk kampus, hingga pengalaman pribadi mereka selama menjalani perkuliahan maupun dunia kerja. Harapannya, cerita dan bekal ini bisa membantu siswa-siswi Smanli untuk lebih siap dan yakin melangkah menuju mimpi mereka di masa depan.</p>
+
+        <div class="about__stats">
+          <div class="about__stat">
+            <strong>4+</strong>
+            <span>Tahun perjalanan ECS</span>
+          </div>
+          <div class="about__stat">
+            <strong>40+</strong>
+            <span>Panitia Alumni</span>
+          </div>
+          <div class="about__stat">
+            <strong>800+</strong>
+            <span>Audiens</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================== EVENT AKTIF (TICKET) + JOIN US =============================== -->
+<section class="section promo">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <span class="eyebrow">Event Aktif</span>
+      <h2>Yang Sedang Berjalan Sekarang</h2>
+      <p>Informasi lengkap seputar event ECS tahun ini - <strong>SAVE THE DATE!</strong></p>
+    </div>
+
+    <!-- Ganti data-countdown-target dengan tanggal & jam hari-H ECS'27 -->
+    <div class="ticket reveal" data-countdown data-countdown-target="2027-01-07T08:00:00+07:00">
+      <div class="ticket__main">
+        <span class="ticket__code">Tiket Resmi · Event Aktif</span>
+        <div class="ticket__year">ECS<span>'27</span></div>
+        <!-- Placeholder tema — ganti sesuai tema resmi ECS'27 -->
+        <p class="ticket__theme">DHARMALAKSANA YATRA <br/> "Meniti Masa Depan dalam Selaras Buana dan Akhlak Mulia".</p>
+
+        <div class="ticket__meta">
+          <div class="ticket__meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            <span><strong>7 Januari 2027</strong><span>Tanggal pelaksanaan</span></span>
+          </div>
+          <div class="ticket__meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><strong>SMAN 5 Cilegon</strong><span>Lokasi acara</span></span>
+          </div>
+          <div class="ticket__meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span><strong>Siswa/Siswi Smanli</strong><span>Target peserta</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticket__side">
+        <h3>Hitung Mundur ECS'27</h3>
+        <div class="countdown">
+          <div class="countdown__unit"><strong data-cd-days>00</strong><span>Hari</span></div>
+          <div class="countdown__unit"><strong data-cd-hours>00</strong><span>Jam</span></div>
+          <div class="countdown__unit"><strong data-cd-mins>00</strong><span>Menit</span></div>
+          <div class="countdown__unit"><strong data-cd-secs>00</strong><span>Detik</span></div>
+        </div>
+        <p>Udah Siap BELOOOMM...</p>
+        <!-- Ganti href dengan tautan formulir pendaftaran -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSei5EYJOEKCtIKxH-W3E_sMcN7_L2JJb2sVI60gaAHio_eb9g/viewform?usp=publish-editor" class="btn btn-primary">Daftar Sekarang</a>
+      </div>
+    </div>
+
+    <!-- ---------- Join Us ---------- -->
+    <div class="join" id="join">
+      <div class="section-head reveal" style="margin-bottom:0;">
+        <span class="eyebrow">Join Us</span>
+        <h2>Cara Bergabung di ECS'27</h2>
+        <p>Tiga langkah sederhana untuk ikut merasakan pengalaman ECS tahun ini.</p>
+      </div>
+
+      <div class="join__grid">
+        <div class="join__card reveal">
+          <span class="join__index">01</span>
+          <h3>Isi Formulir Pendaftaran</h3>
+          <p>Lengkapi data dirimu melalui formulir pendaftaran online yang dibagikan panitia ECS'27.</p>
+        </div>
+        <div class="join__card reveal">
+          <span class="join__index">02</span>
+          <h3>Ikuti Sesi Sharing Alumni</h3>
+          <p>Dengarkan langsung cerita, tips, dan pengalaman dari para alumni Smanli di berbagai kampus dan bidang kerja.</p>
+        </div>
+        <div class="join__card reveal">
+          <span class="join__index">03</span>
+          <h3>Konsultasi Arah Masa Depan</h3>
+          <p>Manfaatkan sesi konsultasi untuk menentukan langkah terbaik menuju kampus atau kariermu.</p>
+        </div>
+      </div>
+
+      <div class="join__cta reveal">
+        <!-- Ganti href dengan tautan formulir pendaftaran resmi -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSei5EYJOEKCtIKxH-W3E_sMcN7_L2JJb2sVI60gaAHio_eb9g/viewform?usp=publish-editor" class="btn btn-primary">Daftar ECS'27 Sekarang</a>
+        <p>Pendaftaran terbuka.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================== SPONSOR =============================== -->
+<section class="section" id="sponsor">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Didukung Oleh</span>
+      <h2>Sponsor &amp; Media Partner</h2>
+      <p>ECS'27 terselenggara berkat dukungan berbagai pihak. Terima kasih atas kepercayaannya.</p>
+    </div>
+
+    <div class="reveal">
+      <div class="sponsor__tabs">
+        <button class="sponsor__tab is-active" data-target="panel-sponsor">Sponsor</button>
+        <button class="sponsor__tab" data-target="panel-partner">Media Partner</button>
+      </div>
+
+      <!-- Tambah logo: duplikasi blok .sponsor__logo, ganti src (PNG transparan disarankan) -->
+      <div class="sponsor__panel is-active" id="panel-sponsor">
+        <div class="sponsor__logo"><div class="photo-frame" data-label="sponsor/sponsor-1.png"><img src="assets/images/sponsor/sponsor-1.png" alt="Logo Sponsor 1" onerror="ecsImgFallback(this)"></div></div>
+        <div class="sponsor__logo"><div class="photo-frame" data-label="sponsor/sponsor-2.png"><img src="assets/images/sponsor/sponsor-2.png" alt="Logo Sponsor 2" onerror="ecsImgFallback(this)"></div></div>
+        <div class="sponsor__logo"><div class="photo-frame" data-label="sponsor/sponsor-3.png"><img src="assets/images/sponsor/sponsor-3.png" alt="Logo Sponsor 3" onerror="ecsImgFallback(this)"></div></div>
+        <div class="sponsor__logo"><div class="photo-frame" data-label="sponsor/sponsor-4.png"><img src="assets/images/sponsor/sponsor-4.png" alt="Logo Sponsor 4" onerror="ecsImgFallback(this)"></div></div>
+      </div>
+
+      <div class="sponsor__panel" id="panel-partner">
+        <div class="sponsor__logo"><div class="photo-frame" data-label="partner/partner-1.png"><img src="assets/images/partner/logosmanlinobg.png" alt="Logo Media Partner 1" onerror="ecsImgFallback(this)"></div></div>
+        <div class="sponsor__logo"><div class="photo-frame" data-label="partner/partner-2.png"><img src="assets/images/partner/logoika.png" alt="Logo Media Partner 2" onerror="ecsImgFallback(this)"></div></div>
+      </div>
+
+      <div class="sponsor__cta">
+        <p><strong>Tertarik jadi sponsor atau media partner?</strong><br>Yuk kolaborasi bersama ECS'27 untuk mendukung acara ini.</p>
+        <a href="index.html#contact" class="btn btn-navy btn-sm">Hubungi Kami</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== CONTACT =============================== -->
+<section class="section section--mist" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Hubungi Kami</h2>
+      <p>Ada pertanyaan seputar ECS'27, kerja sama, atau pendaftaran? Hubungi kami lewat kanal berikut.</p>
+    </div>
+
+    <div class="contact__grid reveal">
+      <div class="contact__card">
+        <div class="contact__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+        </div>
+        <h3>Email</h3>
+        <a class="contact__value" href="mailto:expocampussman5cilegon@gmail.com">expocampussman5cilegon@gmail.com</a>
+      </div>
+
+      <div class="contact__card">
+        <div class="contact__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </div>
+        <h3>Instagram</h3>
+        <a class="contact__value" href="https://instagram.com/smanliexpo" target="_blank" rel="noopener">@smanliexpo</a>
+      </div>
+
+      <div class="contact__card">
+        <div class="contact__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+        </div>
+        <h3>TikTok</h3>
+        <a class="contact__value" href="https://tiktok.com/@ecs.smanli" target="_blank" rel="noopener">@ecs.smanli</a>
+      </div>
+
+      <div class="contact__card">
+        <div class="contact__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-4-1L3 20l1-5.5A8.38 8.38 0 0 1 3 11.5 8.5 8.5 0 1 1 21 11.5z"/></svg>
+        </div>
+        <h3>WhatsApp</h3>
+        <a class="contact__value" href="https://wa.me/6288289019614" target="_blank" rel="noopener">+62 882-8901-9614</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== FOOTER =============================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <div class="footer__brand">
+          <img src="assets/images/logo/logo-ecs.png" alt="Logo ECS">
+          <span>Expo Campus Smanli</span>
+        </div>
+        <p> Jl. Sunan Bonang, Kelurahan Banjarnegara, Kecamatan Ciwandan, Kota Cilegon, Banten 42441.</p>
+      </div>
+
+      <div>
+        <h4>Navigasi</h4>
+        <div class="footer__links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#join">Join Us</a>
+          <a href="index.html#sponsor">Sponsor</a>
+          <a href="event.html">Event</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Kontak</h4>
+        <div class="footer__contact">
+          <a href="mailto:expocampussman5cilegon@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+            expocampussman5cilegon@gmail.com
+          </a>
+          <a href="https://instagram.com/smanliexpo" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
+            @smanliexpo
+          </a>
+          <a href="https://wa.me/6288289019614" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-4-1L3 20l1-5.5A8.38 8.38 0 0 1 3 11.5 8.5 8.5 0 1 1 21 11.5z"/></svg>
+            +62 882-8901-9614
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span id="ecs-year">2027</span> Expo Campus Smanli</span>
+      <span>#rmzydrmwn</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('ecs-year').textContent = new Date().getFullYear();</script>
+<script src="js/navbar.js"></script>
+<script src="js/hero-slider.js"></script>
+<script src="js/scroll-reveal.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/sponsor.js"></script>
+</body>
+</html>
