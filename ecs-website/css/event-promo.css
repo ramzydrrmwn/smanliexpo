@@ -1,7 +1,3 @@
-/* =========================================================
-   event-promo.css — Event aktif + Join Us
-   Pertamina Foundation inspired dark section with cards
-   ========================================================= */
 
 .promo{ background: var(--gray-900); position: relative; overflow: hidden; }
 .promo::before{
